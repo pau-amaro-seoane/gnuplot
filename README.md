@@ -22,6 +22,12 @@ where I have both the file gnuplotrc and another folder, called snippets.
 
 ***(a) gnuplotrc***
 
+First, let gnuplot know where `gnuplotrc` is. In my case, I have to run
+
+```
+$ ln -sf  /home/pau/fitx_confg/gnuplot/gnuplotrc  ~/.gnuplot
+```
+
 The contents of gnuplotrc are
 
 ```
