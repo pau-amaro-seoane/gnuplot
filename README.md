@@ -24,7 +24,8 @@ where I have both the file gnuplotrc and another folder, called snippets.
 
 The contents of gnuplotrc are
 
-```# gnuplotrc configuration file
+```
+# gnuplotrc configuration file
 # Pau Amaro Seoane, Berlin, 24/Jul/2020
 
 # Beause gnuplot does not allow to pass an argument
@@ -36,7 +37,8 @@ The contents of gnuplotrc are
 
             # ******************** loadpath ******************* #
 
-set loadpath "/home/pau/fitx_confg/gnuplot/snippets/:/home/pau/fitx_confg/gnuplot/palettes/" # Do not use $HOME here```
+set loadpath "/home/pau/fitx_confg/gnuplot/snippets/:/home/pau/fitx_confg/gnuplot/palettes/" # Do not use $HOME herei
+```
 
 If you wish, obviously, you can simply add that line to $HOME/.gnuplotrc and avoid the symbolic linking.
 
