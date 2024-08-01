@@ -20,7 +20,7 @@ In my case, hence, the subfolder is
 
 where I have both the file gnuplotrc and another folder, called snippets. 
 
-##(a) gnuplotrc
+**(a) gnuplotrc**
 
 The contents of gnuplotrc are
 
@@ -42,7 +42,7 @@ set loadpath "/home/pau/fitx_confg/gnuplot/snippets/:/home/pau/fitx_confg/gnuplo
 
 If you wish, obviously, you can simply add that line to $HOME/.gnuplotrc and avoid the symbolic linking.
 
-##(b) snippets
+**(b) snippets**
 
 The contents of snippets is the following:
 
