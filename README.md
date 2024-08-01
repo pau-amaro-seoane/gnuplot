@@ -46,17 +46,27 @@ If you wish, obviously, you can simply add that line to $HOME/.gnuplotrc and avo
 
 The contents of snippets is the following:
 
-```$ ls snippets 
-arrows.cfg       convfactors.cfg  header.cfg       lines.cfg        xborder.cfg      yborder.cfg
-constants.cfg    grid.cfg```
+```
+$ ls snippets 
+arrows.cfg       
+convfactors.cfg  
+header.cfg       
+lines.cfg        
+xborder.cfg      
+yborder.cfg
+constants.cfg    
+grid.cfg
+```
 
 where, again, I have taken over a lot of things from <a href="http://www.gnuplotting.org/">gnuplotting</a>.
 
 The most important file is `header.cfg`, which contains this
 
-```set terminal epslatex size 8.89cm,6.65cm color colortext 10 header "\\newcommand{\\ft}[0]{\\footnotesize}"
+```
+set terminal epslatex size 8.89cm,6.65cm color colortext 10 header "\\newcommand{\\ft}[0]{\\footnotesize}"
 set border linewidth 4
-set output "out.tex"```
+set output "out.tex"
+```
 
 because I always use latex with gnuplot thanks to two scripts I wrote.
 
@@ -68,7 +78,8 @@ I have two scripts (one of them is a silly one) to only use latex on the plots. 
 
 The main script is the second one, which contains this information in the header
 
-```# This script is meant to quickly and silently produce an eps
+```
+# This script is meant to quickly and silently produce an eps
 # from a File.tex and File.eps created with gnuplot. 
 #
 #  Usage:  GpTex.sh [-p] filename
@@ -106,18 +117,23 @@ The main script is the second one, which contains this information in the header
 #
 #  Note:
 #  I've used redirect to /dev/null to quiet LaTeX and dvips output
-#  To restore the noise, simply remove those redirects.```
+#  To restore the noise, simply remove those redirects.
+```
 
 The second script is just doing what is explained in the header
 
-```# This is a dummy script which uses
+```
+# This is a dummy script which uses
 # gnuplot and GpTex -p assuming that
 # gnuplot exports always to out.tex
-# to then open it with a pdf viewer```
+# to then open it with a pdf viewer
+```
 
 This way, you just have to run from your terminal
 
-```$ Gnuplot.sh YourScript.gnu```
+```
+$ Gnuplot.sh YourScript.gnu
+```
 
 This will create the figure with latex and open a viewer to have a look at the
 outputted (and trimmed) pdf which, by default, is going to be called `out.pdf`.
@@ -127,9 +143,11 @@ Default template for gnuplot
 
 I work with vi(m); in my `vimrc` file I have defined this line
 
-```"""" gnuplot
+```
+"""" gnuplot
 ab figgnuplot        ^[:r $HOME/fitx_confg/vim/motlles/figgnuplot.gnu^Mggdd
-ab gnuplotfig        ^[:r $HOME/fitx_confg/vim/motlles/figgnuplot.gnu^Mggdd```
+ab gnuplotfig        ^[:r $HOME/fitx_confg/vim/motlles/figgnuplot.gnu^Mggdd
+```
 
 so that when I type one of those two words in vim, a template appears with all
 of the paths defined and also a skeleton for a general-purpose `.gnu` file. 
